@@ -1,0 +1,14 @@
+{
+  "name": "Module Federation/Hybrids Sample",
+  "description": "A barebones module federation and hybrids example",
+  "repository": "https://github.com/rubixibuc/mf-heroku-demo.git",
+  "keywords": ["module-federation", "hybrids"],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
