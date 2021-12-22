@@ -1,0 +1,13 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-prettier/recommended"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-alphabetical-order": true,
+    "selector-type-no-unknown": [
+      true,
+      { "ignore": ["custom-elements", "default-namespace"] }
+    ],
+    "property-no-vendor-prefix": null
+  }
+}

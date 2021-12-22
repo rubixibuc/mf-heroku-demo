@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "commonjs": true,
+    "node": true,
+    "worker": true
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "sort-imports": "error",
+    "sort-keys": "error",
+    "sort-vars": "error"
+  }
+}

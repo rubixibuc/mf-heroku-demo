@@ -1,0 +1,36 @@
+{
+  "name": "mf-heroku-template",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack --mode production",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@vaadin/router": "^1.7.4",
+    "@webcomponents/webcomponentsjs": "^2.6.0",
+    "hybrids": "^6.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.16.5",
+    "babel-loader": "^8.2.2",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "external-remotes-plugin": "^1.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.3",
+    "postcss-html": "^1.0.1",
+    "prettier": "^2.4.1",
+    "stylelint": "^14.0.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^23.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^1.2.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^4.0.0"
+  }
+}
