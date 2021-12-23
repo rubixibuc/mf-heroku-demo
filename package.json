@@ -1,6 +1,6 @@
 {
   "name": "mf-heroku-template",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --mode production",
