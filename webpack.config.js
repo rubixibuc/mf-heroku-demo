@@ -34,7 +34,11 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "mf-heroku-demo",
+      exposes: {
+        "./home": "./src/components/home.js",
+      },
+      filename: "remoteEntry.js",
+      name: "mf_heroku_demo",
       shared: { hybrids: deps["hybrids"] },
     }),
     new ExternalTemplateRemotesPlugin(),
