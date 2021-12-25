@@ -1,0 +1,9 @@
+h1 {
+    border: 1px dotted #ccf;
+    text-align: center;
+}
+
+img {
+    height: 1em;
+    vertical-align: middle;
+}

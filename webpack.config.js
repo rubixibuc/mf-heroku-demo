@@ -27,6 +27,25 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.css$/i,
+        use: [
+          {
+            loader: "css-loader",
+            options: {
+              exportType: "css-style-sheet",
+            },
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: ["postcss-preset-env", "autoprefixer"],
+              },
+            },
+          },
+        ],
+      },
     ],
   },
   output: {
@@ -35,7 +54,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       exposes: {
-        "./home": "./src/components/home.js",
+        "./components/home": "Components/home",
       },
       filename: "remoteEntry.js",
       name: "mf_heroku_demo",
@@ -46,4 +65,10 @@ module.exports = {
       template: "./public/index.html",
     }),
   ],
+  resolve: {
+    alias: {
+      Assets: path.resolve(__dirname, "src/assets/"),
+      Components: path.resolve(__dirname, "src/components/"),
+    },
+  },
 };
