@@ -50,6 +50,7 @@ module.exports = {
     ],
   },
   output: {
+    assetModuleFilename: "[name].[contenthash][ext][query]",
     clean: true,
     filename: "[name].[contenthash].js",
     publicPath: "auto",
