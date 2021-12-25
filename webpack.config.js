@@ -15,7 +15,7 @@ module.exports = {
     rules: [
       {
         exclude: /node_modules/,
-        test: /\.js$/,
+        test: /\.js$/i,
         use: {
           loader: "babel-loader",
           options: {
@@ -50,6 +50,8 @@ module.exports = {
     ],
   },
   output: {
+    clean: true,
+    filename: "[name].[contenthash].js",
     publicPath: "auto",
   },
   plugins: [
@@ -63,7 +65,7 @@ module.exports = {
     }),
     new ExternalTemplateRemotesPlugin(),
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
+      title: "MF Heroku Demo",
     }),
   ],
   resolve: {

@@ -3,6 +3,7 @@
     "eslint --cache --fix",
     "stylelint --fix --custom-syntax postcss-html"
   ],
-  "*.{html,css}": "stylelint --fix --custom-syntax postcss-html",
+  "*.html": "stylelint --fix --custom-syntax postcss-html",
+  "*.css": "stylelint --fix",
   "*.{json,html,md}": "prettier --write"
 }
