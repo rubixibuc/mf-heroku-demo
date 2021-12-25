@@ -34,6 +34,7 @@ module.exports = {
             loader: "css-loader",
             options: {
               exportType: "css-style-sheet",
+              importLoaders: 1,
             },
           },
           {
