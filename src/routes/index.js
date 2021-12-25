@@ -7,7 +7,7 @@ document.adoptedStyleSheets = [css];
 new Router(document.body).setRoutes([
   {
     action: () => import("Components/home"),
-    component: "mf-heroku-demo",
+    component: "mfdemo-home",
     path: "/",
   },
 ]);

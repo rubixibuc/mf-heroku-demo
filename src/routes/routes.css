@@ -1,5 +1,20 @@
 html,
 body {
+  height: 100%;
   margin: 0;
-  min-height: 100%;
+}
+
+body {
+  --font-family: "Roboto Mono", monospace;
+
+  background-attachment: fixed;
+  background-image: conic-gradient(
+    from 70deg at center center,
+    rgb(0 255 255) 0%,
+    rgb(255 0 255) 33%,
+    rgb(255 255 0) 66%,
+    rgb(0 255 255) 100%
+  );
+  display: flex;
+  font-family: var(--font-family);
 }

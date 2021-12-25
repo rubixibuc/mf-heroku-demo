@@ -4,11 +4,11 @@ import frontend from "Assets/front-end.png";
 
 const Component = {
   render: () =>
-    html`<h1>
-      <img alt="front-end" src="${frontend}" /> mf-heroku-demo
-    </h1>`.style(css),
+    html`<span
+      ><img alt="front end" src="${frontend}" /> Module Federation</span
+    >`.style(css),
 };
 
-define("mf-heroku-demo", Component);
+define("mfdemo-home", Component);
 
 export default Component;

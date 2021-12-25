@@ -1,8 +1,9 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { ModuleFederationPlugin } = require("webpack").container;
-const ExternalTemplateRemotesPlugin = require("external-remotes-plugin");
 const path = require("path");
+const { ModuleFederationPlugin } = require("webpack").container;
 const deps = require("./package.json").dependencies;
+const ExternalTemplateRemotesPlugin = require("external-remotes-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackTagsPlugin = require("html-webpack-tags-plugin");
 
 module.exports = {
   devServer: {
@@ -61,12 +62,31 @@ module.exports = {
         "./components/home": "Components/home",
       },
       filename: "remoteEntry.js",
-      name: "mf_heroku_demo",
+      name: "mfdemo",
       shared: { hybrids: deps["hybrids"] },
     }),
     new ExternalTemplateRemotesPlugin(),
     new HtmlWebpackPlugin({
-      title: "MF Heroku Demo",
+      title: "mfdemo",
+    }),
+    new HtmlWebpackTagsPlugin({
+      links: [
+        {
+          attributes: {
+            rel: "preconnect",
+          },
+          path: "https://fonts.googleapis.com",
+        },
+        {
+          attributes: {
+            rel: "preconnect",
+          },
+          path: "https://fonts.gstatic.com",
+        },
+        {
+          path: "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap",
+        },
+      ],
     }),
   ],
   resolve: {

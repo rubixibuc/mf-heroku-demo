@@ -1,5 +1,5 @@
 {
-  "name": "mf-heroku-template",
+  "name": "mfdemo",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack serve",
@@ -23,6 +23,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "external-remotes-plugin": "^1.0.0",
     "html-webpack-plugin": "^5.3.1",
+    "html-webpack-tags-plugin": "^3.0.2",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.3",
     "postcss": "^8.4.5",
