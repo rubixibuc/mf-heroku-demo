@@ -94,7 +94,7 @@ module.exports = {
         background: "#000",
         theme_color: "#fff",
       },
-      logo: "src/assets/front-end.png",
+      logo: "./src/assets/front-end.png",
       prefix: "[contenthash]/",
     }),
   ],
