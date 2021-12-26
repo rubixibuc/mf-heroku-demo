@@ -4,9 +4,9 @@ import frontend from "Assets/front-end.png";
 
 const Component = {
   render: () =>
-    html`<img alt="front end" src="${frontend}" /> Module Federation Demo`.style(
-      css
-    ),
+    html`<img alt="front end" src="${frontend}" /><span>
+        Module Federation Demo</span
+      >`.style(css),
 };
 
 define("mfdemo-home", Component);
