@@ -4,7 +4,7 @@ import frontend from "Assets/front-end.png";
 
 const Component = {
   render: () =>
-    html`<img alt="front end" src="${frontend}" /> Module Federation`.style(
+    html`<img alt="front end" src="${frontend}" /> Module Federation Demo`.style(
       css
     ),
 };
