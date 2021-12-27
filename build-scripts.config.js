@@ -6,6 +6,7 @@ module.exports = {
     Components: path.resolve(__dirname, "src/components/"),
   },
   background: "#000",
+  entry: "./src/index",
   exposes: {},
   links: [
     {
