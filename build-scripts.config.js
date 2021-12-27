@@ -25,7 +25,7 @@ module.exports = {
       path: "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap",
     },
   ],
-  logo: path.resolve(__dirname, "src/assets/front-end.png"),
+  logo: "./src/assets/front-end.png",
   metas: [],
   name: "mfdemo",
   scripts: [],
