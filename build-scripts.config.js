@@ -27,6 +27,7 @@ module.exports = {
   ],
   logo: "./src/assets/front-end.png",
   metas: [],
+  modules: ["node_modules"],
   name: "mfdemo",
   scripts: [],
   shared: {},
