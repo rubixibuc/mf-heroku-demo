@@ -1,6 +1,6 @@
 {
   "*.js": [
-    "build-scripts eslint --fix",
+    "build-scripts eslint --cache --fix",
     "build-scripts stylelint --fix --custom-syntax postcss-html"
   ],
   "*.html": "build-scripts stylelint --fix --custom-syntax postcss-html",

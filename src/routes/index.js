@@ -1,7 +1,5 @@
 import { Router } from "@vaadin/router";
-import css from "./routes.css";
-
-document.adoptedStyleSheets = [css];
+import "./routes.css?style";
 
 // noinspection JSIgnoredPromiseFromCall
 new Router(document.body).setRoutes([
