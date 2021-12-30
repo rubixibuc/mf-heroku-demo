@@ -2,7 +2,7 @@ const deps = require("./package.json").dependencies;
 
 module.exports = {
   expose: {
-    "./components/home": "./src/components/home",
+    "./components/home": "components/home",
   },
   logo: "./src/assets/front-end.png",
   name: "mfdemo",
