@@ -1,6 +1,6 @@
 import { define, html } from "hybrids";
 import css from "./home.css";
-import frontend from "Assets/front-end.png";
+import frontend from "assets/front-end.png";
 
 const Component = {
   render: () =>

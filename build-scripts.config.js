@@ -1,6 +1,14 @@
+const deps = require("./package.json").dependencies;
+
 module.exports = {
+  expose: {
+    "./components/home": "./src/components/home",
+  },
   logo: "./src/assets/front-end.png",
   name: "mfdemo",
+  shared: {
+    hybrids: deps["hybrids"],
+  },
   tags: [
     {
       attributes: {
