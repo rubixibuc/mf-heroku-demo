@@ -1,36 +1,25 @@
-const path = require("path");
-
 module.exports = {
-  alias: {
-    Assets: path.resolve(__dirname, "src/assets/"),
-    Components: path.resolve(__dirname, "src/components/"),
-  },
-  background: "#000",
-  entry: "./src/index",
-  exposes: {},
-  links: [
+  logo: "./src/assets/front-end.png",
+  name: "mfdemo",
+  tags: [
     {
       attributes: {
         rel: "preconnect",
       },
       path: "https://fonts.googleapis.com",
+      type: "css",
     },
     {
       attributes: {
         rel: "preconnect",
       },
       path: "https://fonts.gstatic.com",
+      type: "css",
     },
     {
       path: "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap",
+      type: "css",
     },
   ],
-  logo: "./src/assets/front-end.png",
-  metas: [],
-  modules: ["node_modules"],
-  name: "mfdemo",
-  scripts: [],
-  shared: {},
-  theme_color: "#fff",
   title: "MF Demo",
 };
