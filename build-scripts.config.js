@@ -5,7 +5,6 @@ module.exports = {
     "./components/home": "components/home",
   },
   logo: "./src/assets/front-end.png",
-  name: "mfdemo",
   shared: {
     hybrids: deps["hybrids"],
   },
@@ -30,4 +29,5 @@ module.exports = {
     },
   ],
   title: "MF Demo",
+  varName: "mfdemo",
 };
