@@ -1,0 +1,17 @@
+[
+  {
+    "attributes": {
+      "rel": "preconnect"
+    },
+    "path": "https://fonts.googleapis.com"
+  },
+  {
+    "attributes": {
+      "rel": "preconnect"
+    },
+    "path": "https://fonts.gstatic.com"
+  },
+  {
+    "path": "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap"
+  }
+]
