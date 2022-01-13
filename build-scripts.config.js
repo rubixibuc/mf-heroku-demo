@@ -1,4 +1,4 @@
-const exposes = require("exposes.json");
+const exposes = require("./exposes.json");
 const links = require("./links.json");
 const deps = require("./package.json").dependencies;
 
