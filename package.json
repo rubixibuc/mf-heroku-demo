@@ -14,7 +14,7 @@
     "hybrids": "^6.1.0"
   },
   "devDependencies": {
-    "@rubixibuc/build-scripts": "^0.20.0",
+    "@rubixibuc/build-scripts": "^0.21.0",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.3"
   }
