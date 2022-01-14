@@ -1,6 +1,6 @@
 import { define, html } from "hybrids";
 import css from "./home.css";
-import frontend from "assets/front-end.png?resource";
+import frontend from "assets/front-end.png?file";
 
 export default define({
   render: () =>
