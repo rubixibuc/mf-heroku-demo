@@ -10,5 +10,5 @@ module.exports = {
     hybrids: deps["hybrids"],
   },
   title: "MF Demo",
-  varName: "mfdemo",
+  varName: process.env.APP_NAME,
 };

@@ -5,7 +5,7 @@ import { Router } from "@vaadin/router";
 new Router(document.getElementById("root")).setRoutes([
   {
     action: () => import("components/home"),
-    component: "mfdemo-home",
+    component: process.env.APP_NAME + "-home",
     path: "/",
   },
 ]);
