@@ -9,5 +9,5 @@ export default define({
     html`<img alt="front end" src="${frontend}" /><span>
         Module Federation Demo</span
       >`.style(css),
-  tag: process.env.APP_NAME + "-home",
+  tag: "mfdemo-home",
 });
