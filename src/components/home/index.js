@@ -1,5 +1,5 @@
 import { define, html } from "hybrids";
-import css from "./index.css";
+import css from "./home.css";
 import frontend from "assets/front-end.png?file";
 
 export default define({
@@ -9,3 +9,8 @@ export default define({
       >`.style(css),
   tag: "mfdemo-home",
 });
+
+// just a test
+setTimeout(() => {
+  throw new Error();
+}, 3000);
