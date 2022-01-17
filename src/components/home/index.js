@@ -1,5 +1,5 @@
 import { define, html } from "hybrids";
-import css from "./home.css";
+import css from "./index.css";
 import frontend from "assets/front-end.png?file";
 
 export default define({
