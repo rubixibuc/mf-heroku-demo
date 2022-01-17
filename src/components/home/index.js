@@ -9,8 +9,3 @@ export default define({
       >`.style(css),
   tag: "mfdemo-home",
 });
-
-// just a test
-setTimeout(() => {
-  throw new Error();
-}, 3000);
