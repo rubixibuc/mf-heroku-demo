@@ -1,4 +1,4 @@
-import "./routes.css?style";
+import "./styles.css?style";
 import { Router } from "@vaadin/router";
 
 // noinspection JSIgnoredPromiseFromCall

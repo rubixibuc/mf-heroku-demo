@@ -11,7 +11,7 @@
     "@vaadin/router": "^1.7.4",
     "@webcomponents/webcomponentsjs": "^2.6.0",
     "construct-style-sheets-polyfill": "^3.0.5",
-    "hybrids": "^6.1.0"
+    "hybrids": "^7.0.4"
   },
   "devDependencies": {
     "@rubixibuc/build-scripts": "^0.24.1",
