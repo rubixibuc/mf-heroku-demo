@@ -5,7 +5,7 @@ const deps = require("./package.json").dependencies;
 module.exports = {
   exposes,
   links,
-  logo: "./src/assets/front-end.png",
+  logo: "src/images/front-end.png",
   shared: {
     hybrids: deps["hybrids"],
   },
