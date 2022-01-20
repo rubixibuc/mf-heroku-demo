@@ -1,9 +1,5 @@
 {
-  "*.js": [
-    "build-scripts eslint --cache --fix",
-    "build-scripts stylelint --fix --custom-syntax postcss-html"
-  ],
-  "*.html": "build-scripts stylelint --fix --custom-syntax postcss-html",
+  "*.js": "build-scripts eslint --cache --fix",
   "*.css": "build-scripts stylelint --fix",
-  "*.{json,html,md}": "build-scripts prettier --fix"
+  "*.{json,md}": "build-scripts prettier --fix"
 }
