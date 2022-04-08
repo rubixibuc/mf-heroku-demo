@@ -1,5 +1,5 @@
 import { define, html } from "hybrids";
-import css from "./scoped.css";
+import css from "./scoped.css?string";
 import frontend from "images/front-end.png?file";
 
 export default define({
